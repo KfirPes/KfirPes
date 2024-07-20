@@ -1,0 +1,2021 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/blue_200"
+    tools:context=".GameActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="@dimen/hearts_width"
+        android:layout_height="@dimen/hearts_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/heart" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/heart" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/heart" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat1"
+        android:layout_width="416dp"
+        android:layout_height="766dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle1"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle2"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle3"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle4"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle5"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="40dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle6"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle7"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle8"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle9"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle10"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="80dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle11"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle12"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle13"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle14"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle15"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="120dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle16"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle17"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle18"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle19"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle20"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="160dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle21"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle22"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle23"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle24"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle25"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="200dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle26"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle27"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle28"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle29"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle30"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="240dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle31"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle32"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle33"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle34"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle35"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="280dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle36"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle37"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle38"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle39"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle40"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="320dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle41"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle42"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle43"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle44"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle45"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="360dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle46"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle47"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle48"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle49"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle50"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="400dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle51"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle52"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle53"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle54"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle55"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="440dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle56"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle57"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle58"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle59"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle60"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="480dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle61"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle62"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle63"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle64"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle65"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="520dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle66"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle67"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle68"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle69"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle70"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="560dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle71"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle72"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle73"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle74"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle75"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="600dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle76"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle77"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle78"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle79"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle80"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="640dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle81"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle82"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle83"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle84"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle85"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="680dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle86"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle87"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle88"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle89"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_Obstacle90"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat2"
+        android:layout_width="382dp"
+        android:layout_height="762dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin1"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin2"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin3"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin4"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin5"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="40dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin6"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin7"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin8"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin9"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin10"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="80dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin11"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin12"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin13"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin14"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin15"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="120dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin16"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin17"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin18"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin19"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin20"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="160dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin21"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin22"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin23"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin24"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin25"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="200dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin26"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin27"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin28"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin29"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin30"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="240dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin31"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin32"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin33"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin34"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin35"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="280dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin36"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin37"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin38"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin39"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin40"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="320dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin41"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin42"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin43"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin44"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin45"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="360dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin46"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin47"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin48"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin49"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin50"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="400dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin51"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin52"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin53"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin54"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin55"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="440dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin56"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin57"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin58"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin59"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin60"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="480dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin61"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin62"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin63"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin64"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin65"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="520dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin66"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin67"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin68"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin69"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin70"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="560dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin71"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin72"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin73"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin74"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin75"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="600dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin76"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin77"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin78"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin79"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin80"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="640dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin81"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin82"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin83"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin84"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin85"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="360dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="-360dp"
+            android:layout_marginTop="680dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin86"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin87"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin88"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin89"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_coin90"
+                android:layout_width="72dp"
+                android:layout_height="@dimen/hearts_height"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/holo_orange_light"
+                android:visibility="invisible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="360dp"
+        android:layout_height="37dp"
+        android:layout_alignBottom="@+id/linearLayoutCompat1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="680dp"
+        android:layout_marginBottom="8dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_body1"
+            android:layout_width="72dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/black"
+            android:visibility="invisible" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_body2"
+            android:layout_width="72dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/black" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_body3"
+            android:layout_width="72dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/black"
+            android:visibility="invisible" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_body4"
+            android:layout_width="72dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/black"
+            android:visibility="invisible" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_body5"
+            android:layout_width="72dp"
+            android:layout_height="@dimen/hearts_height"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/black"
+            android:visibility="invisible" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:text="000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/score_size"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="572dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginBottom="18dp">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_BTN_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="right" />
+
+        <View
+            android:layout_width="@dimen/default_margin"
+            android:layout_height="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_BTN_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Left" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
